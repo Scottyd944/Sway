@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home_option" />
+        <item
+            android:id="@+id/myMatches"
+            android:title="@string/mymatches_option" />
+        <item
+            android:id="@+id/myProfile"
+            android:title="@string/myprofile_option" />
+        <item
+            android:id="@+id/privacyAreas"
+            android:title="@string/privacy_areas_option" />
+        <item
+            android:id="@+id/myPhotos"
+            android:title="@string/myphotos_option" />
+        <item
+            android:id="@+id/share"
+            android:title="Spread the word!" />
+        <item
+            android:id="@+id/feedback"
+            android:title="@string/feedback_option" />
+        <item
+            android:id="@+id/premium"
+            android:title="Early Upgrade!" />
+        <item
+            android:id="@+id/signOut"
+            android:title="@string/signout_option" />
+
+    </group>
+</menu>

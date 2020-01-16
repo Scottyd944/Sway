@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#14caf1</color>
+    <color name="colorPrimaryDark">#00000000</color>
+    <color name="colorAccent">#282828</color>
+    <color name="darkGray">#363636</color>
+    <color name="midGray">#969696</color>
+    <color name="softGray">#EFEFEF</color>
+    <color name="lightGray">#DEDEDE</color>
+    <color name="facebookBlueButton">#2C56AA</color>
+    <color name="hyperLinkBlue">#1B78E0</color>
+    <color name="transparent">#00000000</color>
+    <color name="alphaWhite">#ccffffff</color>
+    <color name="yellowHairColor">#FFE766</color>
+    <color name="brownHairColor">#8b5a00</color>
+    <color name="redHairColor">#cd3700</color>
+    <color name="blackHairColor">#000000</color>
+
+</resources>

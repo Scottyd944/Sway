@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/paddingNormal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Alerta!"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:id="@+id/dialogTitle" />
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:textColor="@color/midGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Este es un mensaje generado de manera aleatoria para representar un mensaje real a comunicar por medio de la app."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:id="@+id/acceptButton"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

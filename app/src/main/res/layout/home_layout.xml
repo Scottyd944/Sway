@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/home_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vwMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".CoreActivity">
+        <!-- MAIN LAYOUT CONTENT -->
+
+        <!-- LOCATION SERVICE CONTROLLER SECTION -->
+        <TextView
+            android:id="@+id/welcomeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="left"
+            android:text="@string/welcome"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/textxxxLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lblStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="You are currently offline."
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/vwSwitch"
+                android:layout_width="300dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblStatus">
+
+                <TextView
+                    android:id="@+id/offlineLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/marginNormal"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="@string/offline"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textxxLarge"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:background="@color/midGray" />
+
+                <TextView
+                    android:id="@+id/onlineLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginNormal"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="@string/online"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textxxLarge" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ONLINE SECTION -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwOnline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vwStatus"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/lblCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="Your current location online."
+                android:textAlignment="center"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vwMap"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/vwPhoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblCurrentLocation">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vwPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:layout_constraintBottom_toTopOf="@+id/matchMapButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/lblCredits"
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="credits remaining"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgPhoto"
+                    app:layout_constraintTop_toBottomOf="@+id/btnPhoto" />
+
+                <TextView
+                    android:id="@+id/lblHours"
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="hours remaining"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toEndOf="@+id/imgPhoto"
+                    app:layout_constraintTop_toBottomOf="@+id/btnPhoto" />
+
+                <Button
+                    android:id="@+id/btnPhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Unhide my photo"
+                    android:textAllCaps="false"
+                    android:textColor="#14CAF1"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgPhoto"
+                    app:layout_constraintTop_toBottomOf="@+id/lblPhotoStatus" />
+
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stock_photo" />
+
+                <TextView
+                    android:id="@+id/lblPhotoStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Your photo is hidden."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgPhoto"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/matchMapButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/match_map"
+                android:textAllCaps="false"
+                android:textColor="#14CAF1"
+                android:textSize="@dimen/textxxLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

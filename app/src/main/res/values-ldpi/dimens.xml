@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- MARGINS -->
+    <dimen name="marginExtraSmall">3dp</dimen>
+    <dimen name="marginSmall">5dp</dimen>
+    <dimen name="marginNormal">8dp</dimen>
+    <dimen name="marginWide">12dp</dimen>
+    <dimen name="marginExtraWide">16dp</dimen>
+    <dimen name="marginLarge">22dp</dimen>
+    <dimen name="marginxLarge">26dp</dimen>
+    <dimen name="marginxxLarge">30dp</dimen>
+
+
+    <!-- PADDINGS -->
+    <dimen name="paddingExtraSmall">3dp</dimen>
+    <dimen name="paddingSmall">5dp</dimen>
+    <dimen name="paddingNormal">8dp</dimen>
+    <dimen name="paddingWide">12dp</dimen>
+    <dimen name="paddingExtraWide">16dp</dimen>
+    <dimen name="paddingLarge">22dp</dimen>
+    <dimen name="paddingxLarge">26dp</dimen>
+    <dimen name="paddingxxLarge">30dp</dimen>
+
+    <!-- BUTTONS -->
+    <dimen name="smallWidth">80dp</dimen>
+    <dimen name="normalWidth">160dp</dimen>
+    <dimen name="largeWidth">280dp</dimen>
+    <dimen name="buttonHeight">40dp</dimen>
+    <dimen name="bigButtonHeight">50dp</dimen>
+    <dimen name="googleIconSize">40dp</dimen>
+    <dimen name="facebookIconSize">40dp</dimen>
+
+    <!-- TEXT SIZES -->
+    <dimen name="textExtraSmall">10sp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textNormal">14sp</dimen>
+    <dimen name="textLarge">16sp</dimen>
+    <dimen name="textxLarge">18sp</dimen>
+    <dimen name="textxxLarge">20sp</dimen>
+    <dimen name="textxxxLarge">22sp</dimen>
+    <dimen name="textH3Large">26sp</dimen>
+    <dimen name="textH2Large">30sp</dimen>
+    <dimen name="textH1Large">34sp</dimen>
+
+
+</resources>

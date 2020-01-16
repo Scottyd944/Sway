@@ -1,0 +1,174 @@
+<resources>
+    <!-- KEYS -->
+    <string name="facebook_app_id">452220022223517</string>
+    <string name="facebook_app_id_OLD">1201491096566540</string>
+    <string name="sway_api_base">https://sway.azurewebsites.net/api/</string>
+
+    <!-- LANDING PAGE -->
+    <string name="app_name">Sway</string>
+    <string name="app_title">Sway</string>
+    <string name="slide_1_title">Magically Dance,\nNo Practice Required</string>
+    <string name="slide_2_title">Personalized\nStickers</string>
+    <string name="slide_3_title">Create Dancing\nMemes</string>
+    <string name="slide_4_title">Get Your Digital Stunt Double</string>
+
+    <string name="slide_1_text">Sway\'s AI-Powered motion filters turn you into an amazing dancer with just a few taps.</string>
+    <string name="slide_2_text">Put your personalized stickers into Instagram and Snapchat stories.</string>
+    <string name="slide_3_text">Pin emojis to your hands, add backup dancers, or use your own music with the REMIX button!</string>
+    <string name="google_button">Sign in with Google</string>
+    <string name="facebook_button">Sign in with Facebook</string>
+    <string name="login_error">There was a problem!</string>
+    <string name="facebook_sign_in_failure">We had trouble logging you in. Please verify your device is connected to the internet and try again.</string>
+
+
+    <!-- BUTTONS -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="accept">Accept</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="reject">Reject</string>
+    <string name="ok">Ok</string>
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="unhide_photo">Unhide My Photo</string>
+    <string name="match_map">Match Map</string>
+    <string name="search">Search This Area</string>
+
+    <!-- NAVIGATION DRAWER -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Closed</string>
+    <string name="home_option">Home</string>
+    <string name="mymatches_option">My Matches</string>
+    <string name="myprofile_option">My Profile</string>
+    <string name="myphotos_option">My Photos</string>
+    <string name="feedback_option">App Feedback</string>
+    <string name="privacy_areas_option">Privacy Areas</string>
+    <string name="signout_option">Sign Out</string>
+
+    <!-- PROFILE SCREEN -->
+    <string name="describe_yourself">Describe Yourself</string>
+    <string name="profile_description">It\'s very important you are truthful and accurate here. If you\'re not, we won\'t be able to match you up with the right people!</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height</string>
+    <string name="four">4 feet</string>
+    <string name="five">5 feet</string>
+    <string name="six">6 feet</string>
+    <string name="feet">feet</string>
+    <string name="weight">Weight</string>
+    <string name="body_type">Body Type</string>
+    <string name="skinny_thin">Skinny/Thin</string>
+    <string name="avrg">Average</string>
+    <string name="fit_athletic">Fit/Athletic</string>
+    <string name="large_curvy">Large/Curvy</string>
+    <string name="lbs">lbs</string>
+    <string name="eye_color">Eye Color</string>
+    <string name="hair_color">Hair Color</string>
+    <string name="blondHair">Blonde</string>
+    <string name="brownHair">Brown</string>
+    <string name="redHair">Red</string>
+    <string name="blackHair">Black</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="american_indian">American Indian</string>
+    <string name="black">Black</string>
+    <string name="chinese">Chinese</string>
+    <string name="japanese">Japanese</string>
+    <string name="pacific_islander">Pacific Islander</string>
+    <string name="asian_indian">Asian Indian</string>
+    <string name="caucasian">Caucasian</string>
+    <string name="filipino">Filipino</string>
+    <string name="korean">Korean</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="organization">Organization</string>
+    <string name="personality">Personality</string>
+    <string name="shy">Shy</string>
+    <string name="loud">Loud</string>
+    <string name="witty">Witty</string>
+    <string name="quiet">Quiet</string>
+    <string name="fiesty">Fiesty</string>
+    <string name="funny">Funny</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="compassionate">Compassionate</string>
+    <string name="friendly">Friendly</string>
+    <string name="loyal">Loyal</string>
+    <string name="intelligent">Intelligent</string>
+    <string name="successful">Successful</string>
+    <string name="education">Education:</string>
+    <string name="high_school">High School</string>
+    <string name="bs_degree">BS Degree</string>
+    <string name="masters">Masters</string>
+    <string name="PHD">PHD</string>
+    <string name="risk">Risk</string>
+    <string name="safeRisk">Play it safe!</string>
+    <string name="averageRisk">Average</string>
+    <string name="baseRisk">Base Jumper</string>
+    <string name="politics">Politics:</string>
+    <string name="liberal">Liberal</string>
+    <string name="conservative">Conservative</string>
+    <string name="kids">Kids:</string>
+    <string name="never">Never</string>
+    <string name="someday">Someday</string>
+    <string name="already">Already</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="chaosOrg">Chaos</string>
+    <string name="averageOrg">Average</string>
+    <string name="ocdOrg">OCD</string>
+    <string name="pick_three">(pick three)</string>
+
+    <!-- MATCH SCREEN -->
+    <!-- only unique strings are placed here, if strings are same as profile those will be reused -->
+    <string name="describe_match">Describe Your Match</string>
+    <string name="match_legend">Tell us what you\'re looking for in a match.</string>
+    <string name="match_for">For</string>
+    <string name="match_age">Age</string>
+    <string name="height_shortest">Height - Shortest</string>
+    <string name="height_Tallest">Height - Tallest</string>
+    <string name="body_types">Body Types</string>
+    <string name="eye_colors">Eye Colors</string>
+    <string name="hair_colors">Hair Colors</string>
+    <string name="ethnicities">Ethnicities</string>
+    <string name="organizations">Organizations</string>
+    <string name="personalities">Personalities</string>
+    <string name="educations">Educations</string>
+    <string name="risks">Risks</string>
+    <string name="Politics">Politics</string>
+    <string name="dating">Dating</string>
+    <string name="friends">Friends</string>
+    <string name="hook_up">Hook-Up</string>
+    <string name="normal">Average</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <!-- HOME SCREEN -->
+    <string name="online">Online</string>
+    <string name="welcome">Welcome</string>
+    <string name="offline">Offline</string>
+
+    <!-- DIALOGS -->
+    <string name="no_location_services_title">Turn On Location Services to Determine Your Location</string>
+    <string name="no_location_services_message">sway uses your location to guide you to your potential matches. You can disable location updates at any time right from the home screen.</string>
+    <string name="there_was_a_problem">There was a problem!</string>
+    <string name="profile_save_error">We had trouble saving your profile. Please verify your device is connected to the internet and try again.</string>
+    <string name="search_error">We had trouble searching for matches. Please verify your device is connected to the internet and try again.</string>
+    <string name="profile_saved">Profile Saved!</string>
+    <string name="match_saved">Matches Saved!</string>
+    <string name="profile_updated">Profile Updated!</string>
+    <string name="profile_has_saved">Your profile has been saved.</string>
+    <string name="match_has_saved">Your matches have been saved.</string>
+    <string name="profile_has_updated">Your profile has been updated.</string>
+    <string name="logout_title">Hold up!</string>
+    <string name="block_user_title">Confirm Block</string>
+    <string name="block_user_message">Are you sure you want to block this match?</string>
+    <string name="general_error_title">Oh No!</string>
+    <string name="general_error_message">There was a problem in the matrix. Please check that your device is connected to the internet and try again!</string>
+    <string name="block_user_success_title">Match Blocked</string>
+    <string name="block_user_success_message">This match has been blocked. From now on, you will not match with each other, and you will not see each other on the map.</string>
+    <string name="logout_message">Are you sure you want to sign out?</string>
+    <string name="title_activity_match_map">Map</string>
+    <string name="title_activity_match_detail">MatchDetailActivity</string>
+
+
+</resources>

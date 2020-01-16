@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/facebookLogo"
+        android:drawable="@drawable/facebook_base_icon"
+        android:width="@dimen/buttonHeight"
+        android:height="@dimen/buttonHeight"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        />
+
+</layer-list>

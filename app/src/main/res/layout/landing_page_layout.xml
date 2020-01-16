@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:animateLayoutChanges="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vwMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.swayapp.LandingPage">
+
+        <ViewFlipper
+            android:id="@+id/featuresFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="60"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!-- SLIDE 1 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slide1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:contentDescription="image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide1"
+                    app:layout_constraintBottom_toTopOf="@+id/slide1title"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/slide1title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_1_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGray"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6" />
+
+                <TextView
+                    android:id="@+id/slide1text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_1_text"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/slide1title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- SLIDE 2 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slide2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:contentDescription="image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide2"
+                    app:layout_constraintBottom_toTopOf="@+id/slide2title"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/slide2title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_2_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGray"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6" />
+
+                <TextView
+                    android:id="@+id/slide2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_2_text"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/slide2title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- SLIDE 3 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slide3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:contentDescription="image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide3"
+                    app:layout_constraintBottom_toTopOf="@+id/slide3title"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/slide3title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_3_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGray"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6" />
+
+                <TextView
+                    android:id="@+id/slide3text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_3_text"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/slide3title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- SLIDE 4 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slide4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:contentDescription="image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide4"
+                    app:layout_constraintBottom_toTopOf="@+id/slide4title"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/slide4title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="@string/slide_4_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.55" />
+
+                <Button
+                    android:id="@+id/googleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="@dimen/marginSmall"
+                    android:background="@color/blackHairColor"
+                    android:drawablePadding="@dimen/paddingNormal"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/google_button"
+                    android:textColor="@color/softGray"
+                    android:textSize="@dimen/textLarge"
+                    app:layout_constraintEnd_toEndOf="@id/imageView4"
+                    app:layout_constraintStart_toStartOf="@id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/slide4title"/>
+
+                <Button
+                    android:id="@+id/facebookButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/marginSmall"
+                    android:background="@color/facebookBlueButton"
+                    android:drawablePadding="@dimen/paddingNormal"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="signInFacebook"
+                    android:text="@string/facebook_button"
+                    android:textColor="@color/softGray"
+                    android:textSize="@dimen/textLarge"
+                    app:layout_constraintEnd_toEndOf="@id/imageView4"
+                    app:layout_constraintStart_toStartOf="@id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/googleButton"/>
+
+                <TextView
+                    android:id="@+id/slide4trouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="Trouble Signing In? Chat with us!"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGray"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/facebookButton"
+                    app:layout_constraintStart_toStartOf="@id/facebookButton"
+                    app:layout_constraintTop_toBottomOf="@id/facebookButton"/>
+
+                <TextView
+                    android:id="@+id/slide4terms"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingNormal"
+                    android:paddingRight="@dimen/paddingNormal"
+                    android:text="You must be 13+ years old (16+ for EU residents), and agree to our Terms and Privacy Policy"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightGray"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ViewFlipper>
+
+        <RelativeLayout
+            android:id="@+id/bulletIndicatorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/featuresFlipper">
+
+            <RatingBar
+                android:id="@+id/bulletIndicator"
+                style="@style/CustomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:isIndicator="true"
+                android:numStars="4"
+                android:rating="1"
+                android:stepSize="1" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
